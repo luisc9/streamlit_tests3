@@ -33,6 +33,13 @@ if st.button("Show Goals"):
     else:
         st.write("Player not found or data not available.")
 
-#print(f"home_team = {home_team}")
+# Side bar
+
+st.sidebar.title("Advanced options")
+
+st.sidebar.write("If unsure of what scorer name, year or country to look for, check the box below to show the data!")
+
+if st.sidebar.checkbox("Show data"):
+    st.write(goalscorers)
 
 
